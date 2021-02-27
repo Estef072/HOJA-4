@@ -10,9 +10,9 @@
  */
 import java.util.Stack;
 
-public class InfixToPostFix {
+public class InfixToPostFix implements PostfixInterface{
 
-    static int precedence(char c){
+    public  int precedence(char c){ 
         switch (c){
             case '+':
             case '-':
