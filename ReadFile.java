@@ -7,6 +7,7 @@
 /**
  *
  * @author Estefania
+ * @author Walter Cruz
  */
 import java.io.File;  // Import the File class
 import java.io.FileNotFoundException;// Import this class to handle errors
@@ -15,6 +16,7 @@ import java.util.Scanner; // Import the Scanner class to read text files
 /**
  * Lee el archivo
  * @author Sayra Estefania
+ * @author Walter Cruz
  *
  */
 public  class ReadFile{
@@ -24,6 +26,8 @@ public  class ReadFile{
 	 * @param filename el nombre del archivo
 	 * @return el contenido
 	 */
+	 
+	 //En este caso el método read recibe y lee el documento y regresa solamente el texto
 	public String read(String filename) {
 		try {
 		      File myObj = new File(filename);

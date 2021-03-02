@@ -6,12 +6,14 @@
 
 /**
  *
- * @author Estefania
+ * @author Estefania Elvira
+ * @author Walter Cruz
  */
 import java.util.Stack;
 
 public class InfixToPostFix implements PostfixInterface{
 
+	//Este obtiene alguno de los signos antes de un número de la lista y devuelve dicho número 
     public  int precedence(char c){ 
         switch (c){
             case '+':
@@ -26,6 +28,10 @@ public class InfixToPostFix implements PostfixInterface{
         return -1;
     }
 
+
+	//Este método lo que realiza es ir acomodando los textos de los documentos
+	//de tal manera que va reemplazando alguno carácteres como () y ordenandolor 
+	//en una nueva cadena de strings
     public  String infixToPostFix(String expression){
             
             String result =""; 
@@ -41,6 +47,7 @@ public class InfixToPostFix implements PostfixInterface{
                         result += stack.pop();
                     }
                     stack.push(c);
+				//En este caso quita los () para no tenerlos en el resultado final
                 }else if(c==')'){
                     char x = stack.pop();
                     while(x!='('){

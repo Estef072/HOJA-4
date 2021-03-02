@@ -7,8 +7,13 @@
 /**
  *
  * @author Estefania
+ * @author Walter Cruz
  */
+ 
+ 
 public interface  PostfixInterface {
+	
+	//Se creo una interfaz para algunos métodos
      public  String infixToPostFix(String expression);
      public  int precedence(char c);
      

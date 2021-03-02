@@ -11,10 +11,13 @@ import java.io.FileReader;
 
 /**
  *
- * @author Estefania
+ * @author Estefania Elvira
+ * @author Walter Cruz
  */
 public class Prueba {
     public String read (){
+		
+		//Se lee el archivo y se devuelve el contenido
          File archivo = new File ("C:\\archivo.txt");
         FileReader fr = new FileReader(archivo);
          BufferedReader br = new BufferedReader(fr);
